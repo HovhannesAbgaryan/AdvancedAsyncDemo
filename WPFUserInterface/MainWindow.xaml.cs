@@ -144,6 +144,11 @@ namespace WPFUserInterface
             var watch = Stopwatch.StartNew();
 
             //Run download parallel async
+
+            //Variant 1: without progress bar
+            //var websiteDataModels = await DemoFunctions.RunDownloadParallelAsync();
+
+            //Variant 2: with progress bar
             var websiteDataModels = await DemoFunctions.RunDownloadParallelAsync(progress);
 
             //Print website data models
